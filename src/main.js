@@ -11,8 +11,6 @@ let a = 1
 if (a) console.log(1)
 
 Raven
-  .config('https://ce1cc7e243814050b88e6d3176bbf933@sentry.zhuanzhuan.com/14', {
-    release: '0.0.1'
-  })
+  .config('https://ce1cc7e243814050b88e6d3176bbf933@sentry.zhuanzhuan.com/14')
   .addPlugin(RavenVue, Vue)
   .install()

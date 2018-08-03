@@ -1,12 +1,11 @@
 module.exports = {
-  baseUrl: '/youpin/test/',
+  baseUrl: './',
   chainWebpack: config => {
     config
       .plugin('sentry')
       .use(require('@sentry/webpack-plugin'), [{
-        release: '0.0.1',
         include: 'dist/js',
-        urlPrefix: '~/youpin/test/js/',
+        urlPrefix: '~/js',
         ignoreFile: '.sentrycliignore',
         configFile: 'sentry.properties',
         debug: true,
