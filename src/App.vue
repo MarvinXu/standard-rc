@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <button @click="createError">create error</button>
     <img src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
@@ -12,6 +13,12 @@ export default {
   name: 'app',
   components: {
     HelloWorld
+  },
+  methods: {
+    createError () {
+      let foo
+      foo.bar()
+    }
   }
 }
 </script>
